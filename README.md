@@ -24,6 +24,7 @@ A) Create a new spreadsheet
 - Open Code.gs and copy the code
 - Open you GAS editor into your new spreadsheet
 - Paste the code
+- Do it the same with altas.html
 
 B) Make a copy from the link
  
