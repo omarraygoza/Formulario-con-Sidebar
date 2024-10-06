@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>Altas</h1>
+    <form name="formAltas" id="formAltas">
+      <div class="form-group">
+        <label for="ID">ID</label>
+        <input type="text" class="form-control" id="id" name="id" placeholder="ID" required >
+      </div>
+      <div class="">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required >
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="1234567890"required >
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="miemail@gmail.com"required >
+      </div>
+      <div class="form-group">
+        <input type="submit" name="Enviar" id="enviar" class="btn btn-primary">
+      </div>
+    </form>
+    <div id="hola">Hola</div>
+<script>
+$("#formAltas").on('submit', function(e){
+  e.preventDefault();
+  let datos = {};
+  datos.id = $('#id').val();
+  datos.nombre = $('#nombre').val();
+  datos.telefono = $('#telefono').val();
+  datos.email = $('#email').val();
+  google.script.run.altas(JSON.stringify(datos));
+});
+</script>
+  </body>
+</html>
+
+
+
