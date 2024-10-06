@@ -12,7 +12,7 @@ HtmlService
 
 ## Links
 
-### [Spreadsheet link](https://docs.google.com/spreadsheets/d/1E2oXbyxGFOXDAg-VoMihRIbfidiytNf9BpjzgdZ2eeA/edit?usp=sharing)
+### [Spreadsheet link](https://docs.google.com/spreadsheets/d/1G6rQwdDcElk0_ifDsgssbWLqvTKYGTXXaUBdRKzd9vY/edit?usp=sharing)
 
 ## How to
 
